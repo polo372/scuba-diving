@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Ressources</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Générateur de Ressources</h1>
+        <button onclick="getResource('MSP')">MSP</button>
+        <button onclick="getResource('Technique')">Technique</button>
+        <button onclick="getResource('Savoir')">Savoir</button>
+        <button onclick="generateDiveParameters()">Générer les Paramètres de Plongée</button>
+        <div id="resource-display"></div>
+        <div id="object-parameters" style="display: none;">
+            <h2>Paramètres de l'Objet</h2>
+            <p id="object-volume"></p>
+            <p id="object-density"></p>
+            <p id="water-density"></p>
+        </div>
+        <div id="lift-force-input" style="display: none;">
+            <h2>Calcul de la Force de Relevage</h2>
+            <p>Entrez le poids de l'objet (en kg) :</p>
+            <input type="number" id="user-object-weight" step="0.01">
+            <p>Entrez la force de relevage nécessaire (en kg) :</p>
+            <input type="number" id="user-lift-force" step="0.01">
+            <button onclick="checkLiftForce()">Vérifier</button>
+        </div>
+        <div id="dive-parameters" style="display: none;">
+            <h2>Paramètres de Plongée</h2>
+            <p id="dive-depth"></p>
+            <p id="dive-time"></p>
+            <p id="exploration-time"></p>
+            <p id="air-consumption-rate"></p>
+            <p id="tank-volume"></p>
+            <p id="tank-pressure"></p>
+            <p>Entrez l'autonomie calculée (en minutes) :</p>
+            <input type="number" id="user-autonomy" step="0.01">
+            <button onclick="checkDiveAutonomy()">Vérifier</button>
+        </div>
+        <div id="correction-display"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
