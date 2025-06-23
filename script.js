@@ -8,22 +8,25 @@ let diveTime;
 let explorationTime;
 let airConsumptionRate;
 let tankVolume;
-let tankPressure;
+let tankPressure;s
 let decompressionStops;
 
 function getRandomResource(category) {
     const resources = {
         "MSP": [
             "categories/MSP/example1.pdf",
-            "categories/MSP/example2.pdf"
+            "categories/MSP/example2.pdf",
+            "categories/MSP/example3.pdf"
         ],
         "Technique": [
-            "categories/Technique/example1.mp4",
-            "categories/Technique/example2.mp4"
+            src="https://www.youtube.com/embed/p8TbR2UdMug?si=GiAYMjbsL4pUdJOb",
+            "categories/Technique/example2.mp4",
+            "categories/Technique/example3.mp4"
         ],
         "Savoir": [
             "categories/Savoir/example1.pdf",
-            "categories/Savoir/example2.pdf"
+            "categories/Savoir/example2.pdf",
+            "categories/Savoir/example3.pdf"
         ]
     };
 
